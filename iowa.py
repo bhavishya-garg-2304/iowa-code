@@ -11,41 +11,40 @@ def get_column_index(x0):
 
 # Step 1: Extract casino headers per page
 def extract_casino_names(page):
-    # Step 1: Get all candidate words (non-numeric, in casino column area)
-    words = page.extract_words()
-    column_word_map = defaultdict(list)
-
-    for w in words:
-        if w['x0'] >= first_casino_x0 and not any(char.isdigit() for char in w['text']):
-            col_idx = get_column_index(w['x0'])
-            if 0 <= col_idx < num_casinos:
-                column_word_map[col_idx].append(w)
-
     casino_names = []
 
     for i in range(num_casinos):
-        col_words = column_word_map[i]
+        # Step 1: Pull all candidate words in this column
+        x0 = first_casino_x0 + i * casino_col_width
+        x1 = x0 + casino_col_width
+        all_words = page.extract_words()
+        col_words = [w for w in all_words if x0 <= w['x0'] <= x1 and not any(char.isdigit() for char in w['text'])]
+
         if not col_words:
+            print(f"[WARN] No words found for column {i+1}")
             casino_names.append(f"Casino {i+1}")
             continue
 
-        # Step 2: Find top-most word in the column — that starts the name block
-        top_word = min(col_words, key=lambda w: w["top"])
-        name_y0 = top_word["top"]
-        name_y1 = name_y0 + 40  # 40pt tall box
+        # Step 2: Find top-most Y position
+        min_top = min(w["top"] for w in col_words)
+        name_y0 = max(min_top - 2, 0)  # small margin above
+        name_y1 = name_y0 + 45  # slightly expanded height
 
-        # Step 3: Extract all words within this dynamic box and current column's x-range
-        x0 = first_casino_x0 + i * casino_col_width
-        x1 = x0 + casino_col_width
         cropped = page.within_bbox((x0, name_y0, x1, name_y1))
         name_words = cropped.extract_words()
 
-        # Step 4: Sort and combine
-        name_sorted = sorted(name_words, key=lambda w: (w["top"], w["x0"]))
-        name = ' '.join(w["text"] for w in name_sorted).replace(' -', '').strip()
-        name = re.sub(r'\s+', ' ', name)
+        if not name_words:
+            print(f"[WARN] No words extracted in bbox for column {i+1} (y0={name_y0:.1f}, y1={name_y1:.1f})")
+            casino_names.append(f"Casino {i+1}")
+            continue
 
-        casino_names.append(name)
+        name_sorted = sorted(name_words, key=lambda w: (w["top"], w["x0"]))
+        text = ' '.join([w["text"] for w in name_sorted])
+        text = text.replace(" -", "").strip()
+        text = re.sub(r"\s+", " ", text)
+
+        print(f"[INFO] Casino {i+1} name: '{text}'")
+        casino_names.append(text)
 
     return casino_names
 
