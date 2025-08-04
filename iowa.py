@@ -11,26 +11,40 @@ def get_column_index(x0):
 
 # Step 1: Extract casino headers per page
 def extract_casino_names(page):
+    # Step 1: Get all candidate words (non-numeric, in casino column area)
     words = page.extract_words()
-
-    # Group words by column (based on x0) for casino area
-    name_blocks = defaultdict(list)
+    column_word_map = defaultdict(list)
 
     for w in words:
-        if (
-            w['x0'] >= first_casino_x0 and            # it's in casino section
-            not any(char.isdigit() for char in w['text']) and  # skip numbers
-            w['top'] < 150                            # skip data rows — adjust if needed
-        ):
+        if w['x0'] >= first_casino_x0 and not any(char.isdigit() for char in w['text']):
             col_idx = get_column_index(w['x0'])
             if 0 <= col_idx < num_casinos:
-                name_blocks[col_idx].append((w['top'], w['x0'], w['text']))
+                column_word_map[col_idx].append(w)
 
     casino_names = []
+
     for i in range(num_casinos):
-        lines = sorted(name_blocks[i], key=lambda x: (x[0], x[1]))  # top-to-bottom, then left-right
-        name = ' '.join(text for _, __, text in lines).replace(' -', '').strip()
-        name = re.sub(r'\s+', ' ', name)  # remove extra spaces
+        col_words = column_word_map[i]
+        if not col_words:
+            casino_names.append(f"Casino {i+1}")
+            continue
+
+        # Step 2: Find top-most word in the column — that starts the name block
+        top_word = min(col_words, key=lambda w: w["top"])
+        name_y0 = top_word["top"]
+        name_y1 = name_y0 + 40  # 40pt tall box
+
+        # Step 3: Extract all words within this dynamic box and current column's x-range
+        x0 = first_casino_x0 + i * casino_col_width
+        x1 = x0 + casino_col_width
+        cropped = page.within_bbox((x0, name_y0, x1, name_y1))
+        name_words = cropped.extract_words()
+
+        # Step 4: Sort and combine
+        name_sorted = sorted(name_words, key=lambda w: (w["top"], w["x0"]))
+        name = ' '.join(w["text"] for w in name_sorted).replace(' -', '').strip()
+        name = re.sub(r'\s+', ' ', name)
+
         casino_names.append(name)
 
     return casino_names
