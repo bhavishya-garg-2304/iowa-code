@@ -12,20 +12,27 @@ def get_column_index(x0):
 # Step 1: Extract casino headers per page
 def extract_casino_names(page):
     words = page.extract_words()
+
+    # Group words by column (based on x0) for casino area
     name_blocks = defaultdict(list)
 
     for w in words:
-        if w['x0'] >= first_casino_x0 and not any(char.isdigit() for char in w['text']):
+        if (
+            w['x0'] >= first_casino_x0 and            # it's in casino section
+            not any(char.isdigit() for char in w['text']) and  # skip numbers
+            w['top'] < 150                            # skip data rows — adjust if needed
+        ):
             col_idx = get_column_index(w['x0'])
             if 0 <= col_idx < num_casinos:
-                name_blocks[col_idx].append((w['top'], w['text']))
+                name_blocks[col_idx].append((w['top'], w['x0'], w['text']))
 
-    # Join words by vertical order and flatten into single-line names
     casino_names = []
     for i in range(num_casinos):
-        lines = sorted(name_blocks[i], key=lambda x: x[0])
-        name = ' '.join(text for _, text in lines).replace(' -', '').strip()
+        lines = sorted(name_blocks[i], key=lambda x: (x[0], x[1]))  # top-to-bottom, then left-right
+        name = ' '.join(text for _, __, text in lines).replace(' -', '').strip()
+        name = re.sub(r'\s+', ' ', name)  # remove extra spaces
         casino_names.append(name)
+
     return casino_names
 
 # Step 2: Extract all data rows with values
