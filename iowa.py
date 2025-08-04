@@ -5,52 +5,44 @@ import re
 pdf_path = "June2025.pdf"
 
 with pdfplumber.open(pdf_path) as pdf:
-    text = ""
-    for page in pdf.pages:
-        t = page.extract_text()
-        if "GAMING REVENUE REPORT -- JUNE 2025" in t:
-            text += t
-            break  # assuming first page contains the full table
+    text = pdf.pages[0].extract_text()
 
-# Step 1: Extract lines
+# Step 2: Remove report title and split lines
 lines = text.split("\n")
+lines = [line.strip() for line in lines if "GAMING REVENUE REPORT" not in line and line.strip() != ""]
 
-# Step 2: Build casino column headers
+# Step 3: Extract casino names (appear before "ADJUSTED GROSS REVENUE")
 casino_names = []
 i = 0
 while i < len(lines):
     if "ADJUSTED GROSS REVENUE" in lines[i]:
         break
-    line1 = lines[i].strip()
-    line2 = lines[i+1].strip() if i+1 < len(lines) else ""
-    # Merge multi-line casino names
-    if not any(char.isdigit() for char in line1 + line2):
-        full_name = f"{line1} {line2}".strip(" -")
-        casino_names.append(full_name)
-        i += 2
-    else:
+    # Combine two lines to form full name
+    name = lines[i]
+    if i + 1 < len(lines) and not any(c.isdigit() for c in lines[i + 1]):
+        name += " " + lines[i + 1]
         i += 1
-
-# Step 3: Extract metric rows
-metrics = []
-data = []
-
-while i < len(lines):
-    line = lines[i].strip()
-    if re.match(r'^[A-Z ]+$', line):  # all caps: it's a metric name
-        metric_name = line
-        i += 1
-        if i < len(lines):
-            values = re.split(r'\s{2,}', lines[i].strip())
-            if len(values) == len(casino_names):
-                metrics.append(metric_name)
-                data.append(values)
+    casino_names.append(name.strip(" -"))
     i += 1
 
-# Step 4: Create DataFrame
+# Step 4: Parse data rows starting from "ADJUSTED GROSS REVENUE"
+metrics = []
+data = []
+while i < len(lines):
+    label = lines[i]
+    i += 1
+    if i >= len(lines):
+        break
+    values = re.split(r'\s{2,}', lines[i])
+    if len(values) == len(casino_names):
+        metrics.append(label)
+        data.append(values)
+    i += 1
+
+# Step 5: Build DataFrame
 df = pd.DataFrame(data, columns=casino_names)
 df.insert(0, "METRIC", metrics)
 
-# Step 5: Export
+# Step 6: Export to Excel
 df.to_excel("gaming_revenue_june2025_final.xlsx", index=False)
-print("✅ Exported to 'gaming_revenue_june2025_final.xlsx'")
+print("✅ Saved as 'gaming_revenue_june2025_final.xlsx'")
