@@ -1,0 +1,192 @@
+# The Current State of Prediction Markets: A Comprehensive Research Report
+
+## Executive Summary
+
+**Prediction markets have experienced explosive growth in 2024**, transforming from a niche financial instrument to a mainstream phenomenon that captured global attention during the U.S. presidential election. The sector represents a paradigm shift in how society aggregates information and forecasts future events, with platforms like **Polymarket achieving $9 billion in trading volume** and **Kalshi generating $24 million in revenue with 1,220% year-over-year growth**[1][2].
+
+The industry stands at a critical juncture, with **federal regulatory approval under CFTC oversight** providing legitimacy while creating new competitive dynamics that threaten traditional sportsbooks and betting exchanges. Major gaming operators **Flutter (FanDuel) and DraftKings are actively pursuing strategic acquisitions and partnerships** to enter this rapidly expanding market[3][4][5].
+## Market Size and Growth Trajectory  
+
+The prediction markets ecosystem encompasses multiple interconnected segments experiencing unprecedented expansion:
+
+### Global Market Projections
+
+**Predictive analytics market**: Valued at **$18.89 billion in 2024**, projected to reach **$82.35 billion by 2032** with a **28.3% CAGR**[6]. This broader category includes traditional forecasting tools and methodologies that complement prediction market platforms.
+
+**Decentralized prediction markets**: Currently valued at **$1.4 billion in 2024**, expected to surge to **$95.5 billion by 2035** representing an extraordinary **46.8% CAGR**[7]. This segment specifically covers blockchain-based platforms offering peer-to-peer event contracts.
+### Platform-Specific Performance
+
+**Polymarket dominance**: The crypto-native platform achieved remarkable milestones in 2024, including **$9 billion in cumulative trading volume**, **314,500 active traders in December**, and explosive growth from **$73 million in 2023**[1][8]. The platform's success stems from its decentralized architecture, global accessibility (excluding U.S. users until recent developments), and comprehensive event coverage spanning politics, sports, entertainment, and economics.
+
+**Kalshi's regulated approach**: Operating as the first **CFTC-approved event contract exchange**, Kalshi generated **$1.97 billion in trading volume in 2024** compared to **$183 million in 2023**[2]. The platform's **$24 million estimated revenue** represents a **1,220% increase** from **$1.8 million in 2023**, driven primarily by election betting and subsequent expansion into sports markets[2].
+
+## Understanding Prediction Markets vs Traditional Betting
+
+### Core Operational Differences
+
+Prediction markets represent a fundamental departure from traditional gambling models, operating more like **financial exchanges than betting platforms**. Users trade **binary contracts priced between $0.01-$0.99** that represent the market's collective assessment of event probabilities[9][10]. Unlike sportsbooks where bettors face a house edge, prediction markets facilitate **peer-to-peer trading** with platforms earning revenue through **transaction fees typically ranging 1-5%**[11][12].
+
+### Regulatory Framework Advantages
+
+The most significant differentiator lies in regulatory classification. **Prediction markets operate under federal CFTC jurisdiction as derivatives**, enabling **nationwide availability across all 50 states**[11][13]. This contrasts sharply with traditional sportsbooks that require **state-by-state licensing** and remain **prohibited in 11 states**[14]. This regulatory advantage allows platforms like Kalshi to offer **legal sports betting in California and Texas**—massive markets closed to conventional operators[15].
+
+### Information Aggregation vs Entertainment
+
+Prediction markets serve dual purposes: **entertainment speculation and information aggregation**. Academic research demonstrates that **market prices often outperform traditional polls in forecasting accuracy**, particularly for longer time horizons[16]. During the 2024 election, **prediction markets correctly indicated Trump's victory** even when traditional polls showed a closer race[9][17].
+
+## How Prediction Markets Work: Examples and Mechanisms
+
+### Contract Structure and Trading
+
+**Binary outcome contracts** form the foundation of prediction markets. Each contract represents a **simple yes/no question** about future events, with prices reflecting **implied probabilities**[10][18]. 
+
+**Example**: A contract asking "Will the Federal Reserve raise interest rates in March 2025?" priced at **$0.35** indicates the market assigns a **35% probability** to rate increases. Traders who believe the probability is higher can **purchase "Yes" contracts** at $0.35, earning **$0.65 profit per contract** if correct, or **lose their investment** if rates remain unchanged.
+
+### Market Mechanics and Price Discovery
+
+**Two primary mechanisms** drive prediction market functionality[10]:
+
+**Continuous Double Auctions (CDA)**: Similar to stock markets, traders submit **buy and sell orders** matched in real-time. Prices fluctuate based on **supply and demand dynamics**, responding instantly to new information. This system works best for **highly liquid markets** with substantial trading activity.
+
+**Automated Market Makers (AMM)**: Algorithmic systems automatically provide **buy and sell prices** using mathematical models like the **Logarithmic Market Scoring Rule (LMSR)**. AMMs ensure **constant liquidity** even for niche markets but may result in **wider bid-ask spreads**.
+
+### Event Categories and Resolution
+
+Modern prediction markets cover diverse event categories:
+
+- **Political outcomes**: Elections, policy decisions, approval ratings
+- **Sports results**: Championship winners, individual game outcomes, season records  
+- **Economic indicators**: Interest rate changes, GDP growth, inflation targets
+- **Entertainment**: Box office revenues, award show winners, celebrity news
+- **Technology**: Product launches, stock price movements, cryptocurrency adoption
+
+**Objective resolution** relies on **third-party data sources** and **predetermined criteria** to eliminate subjective judgment[2]. Platforms integrate feeds from sources like **Associated Press for elections**, **official sports leagues for game results**, and **government agencies for economic data**.
+
+## Major Players and Strategic Developments
+
+### Industry Consolidation Trends
+
+The prediction markets landscape is experiencing **rapid consolidation** as established gaming operators seek entry through acquisitions and partnerships:
+
+**DraftKings-Railbird negotiations**: **DraftKings is reportedly in acquisition talks** with **Railbird Exchange**, a federally licensed prediction market platform that received **CFTC approval in June 2024**[4][5]. Analysts view this as a **"very positive development"** enabling DraftKings to access **high-margin, scalable entry** into underpenetrated states while **avoiding state gaming and federal excise taxes**[19].
+
+**Flutter-
+
+Sources
+[1] Polymarket Hits Record 314.5K Active Traders in December 2024 ... https://www.binance.com/en/square/post/18485856284857
+[2] Kalshi revenue, valuation & growth rate - Sacra https://sacra.com/c/kalshi/
+[3] Flutter Debates Whether to Expand in Nevada with FanDuel https://www.gamblingnews.com/news/flutter-debates-whether-to-expand-in-nevada-with-fanduel/
+[4] As DraftKings Weighs Entry into Prediction Markets, How Should ... https://finance.yahoo.com/news/draftkings-weighs-entry-prediction-markets-110002572.html
+[5] DraftKings' Rumored Acquisition Talks With Prediction Market ... https://stocktwits.com/news-articles/markets/equity/draft-kings-rumored-acquisition-talks-with-prediction-market-platform-railbird-a-very-positive-development-benchmark/ch8WxwiR58a
+[6] Predictive Analytics Market Size, Share | Industry Report 2030 https://www.grandviewresearch.com/industry-analysis/predictive-analytics-market
+[7] Decentralized Prediction Market Size & Forecast 2025-2035 https://www.metatechinsights.com/industry-insights/decentralized-prediction-market-1254
+[8] Polymarket's $9 Billion Surge in Decentralized Finance - OneSafe https://www.onesafe.io/blog/polymarket-trading-volume-2024
+[9] A Primer on Prediction Markets https://wifpr.wharton.upenn.edu/blog/a-primer-on-prediction-markets/
+[10] What is A Prediction Market | Ledger https://www.ledger.com/academy/topics/economics-and-regulation/what-is-a-prediction-market-ledger
+[11] Sports Prediction Markets And Event Trading Explained - Betting USA https://www.bettingusa.com/sports/prediction-markets/
+[12] Prediction Markets vs. Betting Exchanges in 2025 - BettorEdge https://www.bettoredge.com/post/prediction-markets-vs-betting-exchanges
+[13] [PDF] Election Prediction Markets: Evidence from Polymarket, Kalshi, and ... https://hunterng.com/files/polymarket.pdf
+[14] The Investment That Lets You Bet on Movies, Sports, and Elections ... https://www.investopedia.com/betting-on-movies-sports-and-elections-11752255
+[15] DraftKings' rumored Railbird purchase is latest sports betting strike ... https://nypost.com/2025/07/23/betting/draftkings-rumored-railbird-purchase-is-latest-sports-betting-strike-against-california-native-american-tribes/
+[16] Prediction Markets: The Next Big Thing? | Presto Research https://www.prestolabs.io/research/prediction-markets-the-next-big-thing
+[17] Polymarket Volume Nears $2B in October as US Elections 2024 ... https://www.kucoin.com/news/articles/polymarket-volume-nears-2b-in-october-as-us-elections-2024-approach
+[18] Prediction Market: Overview, Types, Examples - Investopedia https://www.investopedia.com/terms/p/prediction-market.asp
+[19] DraftKings stock price target raised to $50 by Benchmark on Railbird ... https://www.investing.com/news/analyst-ratings/draftkings-stock-price-target-raised-to-50-by-benchmark-on-railbird-talks-93CH-4135575
+[20] Overview of the TalentCLEF 2025: Skill and Job Title Intelligence for Human Capital Management https://www.semanticscholar.org/paper/232ff1f1beccf448f49d2a0078a9e5e905a5a7f2
+[21] Prediction of Crime Cases in 2025 in India Using the Fuzzy Time Series Chen Model Method https://jurnal.itscience.org/index.php/brilliance/article/view/5745
+[22] Overview of Respiratory Sensor Solutions to Support Patient Diagnosis and Monitoring https://www.mdpi.com/1424-8220/25/4/1078
+[23] Prediction of Stock Prices Based on Nifty 50 Companies Using Regression Analysis https://ijsrem.com/download/prediction-of-stock-prices-based-on-nifty-50-companies-using-regression-analysis/
+[24] Trends and Patterns in Tea Yield Prediction using Machine Learning Algorithms – a Bibliometric Analysis https://nano-ntp.com/index.php/nano/article/view/3541
+[25] State of the Art of Artificial Intelligence in Clinical Electrophysiology in 2025: A Scientific Statement of the European Heart Rhythm Association (EHRA) of the ESC, the Heart Rhythm Society (HRS), and the ESC Working Group on E-Cardiology https://academic.oup.com/europace/article/doi/10.1093/europace/euaf071/8100285
+[26] Support Vector Regression to Improve Ethereum Price Prediction for Trading Strategies https://ioinformatic.org/index.php/JAIEA/article/view/740
+[27] Stock price prediction based on dual important indicators using ARIMAX: A case study in Vietnam https://www.degruyterbrill.com/document/doi/10.1515/jisys-2024-0101/html
+[28] Analysis and Strategy Research on the Development Trend of Pet Industry Based on Multi Model Prediction https://ieeexplore.ieee.org/document/10989110/
+[29] Carbon peak and new energy vehicle market prediction system based on multimodal machine learning https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13682/3073625/Carbon-peak-and-new-energy-vehicle-market-prediction-system-based/10.1117/12.3073625.full
+[30] FedCSIS 2024 Data Science Challenge: Predicting Stock Trends by a Multi-Dimensional Approach https://annals-csis.org/Volume_41/drp/pdf/7856.pdf
+[31] A Note on Prediction Markets https://arxiv.org/abs/1702.02502
+[32] Strategy-Proof Prediction Markets http://arxiv.org/pdf/1212.5764.pdf
+[33] A systematic literature survey on recent trends in stock market prediction https://peerj.com/articles/cs-1700
+[34] The Random Forest Model for Analyzing and Forecasting the US Stock
+  Market in the Context of Smart Finance https://arxiv.org/pdf/2402.17194.pdf
+[35] Augur: a decentralized oracle and prediction market platform https://arxiv.org/pdf/1501.01042.pdf
+[36] On convergence of forecasts in prediction markets https://arxiv.org/pdf/2402.16345.pdf
+[37] Probability and Asset Updating using Bayesian Networks for Combinatorial
+  Prediction Markets http://arxiv.org/pdf/1210.4900.pdf
+[38] Unihedge -- A decentralized market prediction platform https://arxiv.org/pdf/2108.11631.pdf
+[39] Securities Based Decision Markets https://arxiv.org/pdf/2103.10011.pdf
+[40] Understanding prediction markets and where they're headed - FIA.org https://www.fia.org/marketvoice/articles/predicting-future-prediction-markets
+[41] Predictive Analytics Market Size to Hit USD 100.20 Bn by 2034 https://www.precedenceresearch.com/predictive-analytics-market
+[42] Predictive Analytics Market Size, Share & Growth - 2032 https://www.alliedmarketresearch.com/predictive-analytics-market
+[43] The Journal of Prediction Markets https://www.ubplj.org/index.php/jpm
+[44] Predictive Analytics Market Size, Share | Industry Report [2032] https://www.fortunebusinessinsights.com/predictive-analytics-market-105179
+[45] Betting vs. Prediction Markets: Key Differences and Similarities https://blog.gowagr.app/betting-vs-prediction-markets/
+[46] Stock Market Predictions For 2025: What Is Coming Next Year? https://www.forbes.com/sites/investor-hub/article/stock-market-predictions-2025/
+[47] What are prediction and betting markets? - QuickNode Blog https://blog.quicknode.com/what-are-prediction-and-betting-markets/
+[48] Market Perspectives - Vanguard Advisors https://advisors.vanguard.com/insights/article/series/market-perspectives
+[49] Predictive Analytics Market Size & Trends, Growth Analysis ... https://www.marketsandmarkets.com/Market-Reports/predictive-analytics-market-1181.html
+[50] Prediction Markets and Sports Betting Aren't as Different as You ... https://www.sportsbettingdime.com/guides/articles/prediction-markets/
+[51] Mid-year market outlook 2025 | J.P. Morgan Research https://www.jpmorgan.com/insights/global-research/outlook/mid-year-outlook
+[52] The dream scenario for prediction markets - The Economist https://www.economist.com/finance-and-economics/2025/06/25/the-dream-scenario-for-prediction-markets
+[53] Prediction Markets: What They Are and How They Differ From Sports ... https://www.covers.com/guides/prediction-markets-what-they-are-and-how-they-differ-from-sports-betting
+[54] What's Driving Market Volatility in 2025? Insights and Predictions https://www.jaaimsapp.com/whats-driving-market-volatility-in-2025-insights-and-predictions/
+[55] Prediction Markets: How Reliable Are They Really? (Part 1) - Forbes https://www.forbes.com/sites/georgecalhoun/2024/10/23/prediction-markets-how-reliable-are-they-really-part-1/
+[56] Private Prediction Markets and the Law http://www.ubplj.org/index.php/jpm/article/view/453
+[57] Designing Informative Securities http://arxiv.org/pdf/1210.4837.pdf
+[58] Betting on what is neither verifiable nor falsifiable http://arxiv.org/pdf/2402.14021.pdf
+[59] Conflicting Codes and Codings https://basepub.dauphine.psl.eu/bitstream/123456789/11664/1/SSRN-id1616043.pdf
+[60] Application of the Kelly Criterion to Prediction Markets https://arxiv.org/html/2412.14144v1
+[61] The Elephant in the Dark: A New Framework for Cryptocurrency Taxation and Exchange Platform Regulation in the US https://www.mdpi.com/1911-8074/15/3/118/pdf?version=1646362512
+[62] Decentralized Prediction Market without Arbiters http://arxiv.org/pdf/1701.08421.pdf
+[63] How manipulable are prediction markets? https://arxiv.org/html/2503.03312v1
+[64] From prediction markets to interpretable collective intelligence https://arxiv.org/pdf/2204.13424.pdf
+[65] Political Leanings in Web3 Betting: Decoding the Interplay of Political
+  and Profitable Motives http://arxiv.org/pdf/2407.14844.pdf
+[66] Decentralized Prediction Markets and Sports Books http://arxiv.org/pdf/2307.08768.pdf
+[67] Multi-outcome and Multidimensional Market Scoring Rules http://arxiv.org/pdf/1202.1712.pdf
+[68] [PDF] Prediction Markets Roundtable Submission I'm writing on b https://www.cftc.gov/media/11831/StoneXGroupInc022125/download
+[69] [PDF] bookmakers versus a betting exchange https://www.unifr.ch/tim/en/assets/public/uploads/Publication%20list/2010/IJoF_Franck_Verbeek_Nuesch.pdf
+[70] Polymarket Poised to Re-enter US Market Amid Kalshi's Ongoing ... https://www.joneswalker.com/en/insights/blogs/perspectives/polymarket-poised-to-re-enter-us-market-amid-kalshis-ongoing-legal-battles-with.html?id=102kv1x
+[71] [PDF] Statistical Tests of Real-Money versus Play- Money Prediction Markets https://electronicmarkets.org/fileadmin/user_upload/doc/Issues/Volume_16/Issue_01/V16I1_Statistical_Tests_of_Real-Money_versus_Play-Money_Prediction_Markets.pdf
+[72] What Polymarket's return to USA means for Americans https://bircheshealth.com/resources/polymarket-return-usa
+[73] Prediction Market V Betting Sites? | Sifting the World - Seeking Alpha https://seekingalpha.com/marketplace/206-sifting-the-world/analysis/6125522-prediction-market-v-betting-sites
+[74] Kalshi and Prediction Market Sites - Arbing on Sportsbooks https://tentenseven.com/the-rise-of-kalshi-and-us-prediction-markets-arbing-matched-betting-on-traditional-sportsbooks/
+[75] Polymarket probes dropped in latest regulatory U-turn from Trump https://subscriber.politicopro.com/article/2025/07/polymarket-probe-doj-election-betting-00453966
+[76] Your 2025 market predictions are in: Insights from nearly 5,000 ... https://www.livewiremarkets.com/wires/your-2025-market-predictions-are-in-insights-from-nearly-5-000-investors
+[77] [PDF] A Comparative Risk Analysis of Sportsbooks and Options Sellers https://creativematter.skidmore.edu/cgi/viewcontent.cgi?article=1173&context=econ_studt_schol
+[78] [PDF] 1 February 21, 2025 The Honorable Caroline D. Pham Commodity ... https://www.cftc.gov/media/11826/CongresswomanDinaTitus022125/download
+[79] Regulatory Roundup: From Elections to Sports—The Dynamics of ... https://www.nasdaq.com/articles/fintech/regulatory-roundup-april-2025
+[80] FanDuel, Kalshi Reportedly Discuss Partnership https://publicgaming.com/news-categories/company-news/14515-fanduel-kalshi-reportedly-discuss-partnership
+[81] Coalition urges Commodity Futures Trading Commission cut red ... https://cei.org/news_releases/coalition-urges-commodity-futures-trading-commission-cut-red-tape-on-prediction-markets/
+[82] FanDuel Aims to Get into Prediction Markets with Possible Kalshi ... https://www.sportsbookreview.com/news/fanduel-aims-to-get-into-prediction-markets-with-possible-kalshi-alliance-june-17-2025/
+[83] SEC and CFTC Launch Crypto Initiatives to Revamp Regulations ... https://www.fintechanddigitalassets.com/2025/08/sec-and-cftc-launch-crypto-initiatives-to-revamp-regulations-and-promote-innovation/
+[84] FanDuel, Kalshi Have Discussed a Deal - Front Office Sports https://frontofficesports.com/fanduel-kalshi-have-discussed-a-deal/
+[85] Elections Betting Pays Off, For Now: Implications for Future Event ... https://www.clearygottlieb.com/news-and-insights/publication-listing/elections-betting-pays-off-for-now-implications-for-future-event-contracts
+[86] FanDuel reportedly in talks with Kalshi on prediction market deal https://www.yogonet.com/international/news/2025/06/17/108446-fanduel-reportedly-in-talks-with-kalshi-on-prediction-market-deal
+[87] Report: DraftKings in discussions to acquire Railbird prediction market https://igamingbusiness.com/strategy/ma/draftkings-railbird-prediction-market-acquisition-report/
+[88] Predicting a brighter regulatory future for prediction markets https://cei.org/blog/predicting-a-brighter-regulatory-future-for-prediction-markets/
+[89] Flutter Finalizing Purchase of Italian Gaming Operator Snaitech https://www.covers.com/industry/flutter-near-finalizing-acquisition-of-italian-gaming-operator-snaitech-ap-10-2025
+[90] DraftKings Sees Price Target Hikes After Strong Q2 Report - Stocktwits https://stocktwits.com/news-articles/markets/equity/clear-leader-in-mobile-gaming-draft-kings-sees-price-target-hikes-after-strong-q2-report/chrn3QPRdEa
+[91] The CFTC Is Shaking Up Sports Betting's Legal Future https://www.foley.com/insights/publications/2025/06/the-cftc-is-shaking-up-sports-bettings-legal-future/
+[92] Flutter addresses Nevada expansion and reported talks with Kalshi https://cdcgaming.com/flutter-addresses-nevada-expansion-and-reported-talks-with-kalshi/
+[93] As DraftKings Weighs Entry Into Prediction Markets, How Should ... https://www.barchart.com/story/news/33511753/as-draftkings-weighs-entry-into-prediction-markets-how-should-you-play-dkng-stock
+[94] An Analysis of Market Size Trends Forecasting and Range Prediction in Electric Vehicles Using Machine Learning Algorithms http://dergipark.org.tr/en/doi/10.34110/forecasting.1485136
+[95] Literature Study on the Impact of Tax Policy to the Welfare of Producers, Consumers, and the Size of the Market in A Country's Economy 2024 https://jurnal.iicet.org/index.php/jppi/article/view/5050
+[96] Mapping consumptions and market size of cocaine, amphetamine and MDMA through wastewater analysis: A Dutch case study https://onlinelibrary.wiley.com/doi/10.1111/add.16649
+[97] Analyzing Trends, Skills Demand, and Salary Prediction in the AI and ML Job Market https://ieeexplore.ieee.org/document/10925738/
+[98] Performance Assessment of Temporal Frame Size in Stock Price Prediction https://ieeexplore.ieee.org/document/10711131/
+[99] Genetic Algorithms Application for Pricing Optimization in Commodity Markets https://www.mdpi.com/2227-7390/12/9/1289
+[100] Stock Index Prediction Based on CNN-BiLSTM-Attention https://ieeexplore.ieee.org/document/10898954/
+[101] A study on vegetable replenishment and pricing decisions based on polynomial regression and neural network prediction https://www.clausiuspress.com/article/12563.html
+[102] Market resilience of orthopaedic hip/knee arthroplasty sales during COVID-19. https://link.springer.com/10.1007/s00402-024-05228-2
+[103] Fusion of Technical Indicators and Sentiment Analysis in a Hybrid Framework of Deep Learning Models for Stock Price Movement Prediction https://ieeexplore.ieee.org/document/10806710/
+[104] Markets for Models https://arxiv.org/pdf/2503.02946.pdf
+[105] Research on Marketing Prediction Model Based on Markov Prediction https://downloads.hindawi.com/journals/wcmc/2021/4535181.pdf
+[106] Comparing Prediction Market Structures, With an Application to Market
+  Making http://arxiv.org/pdf/1009.1446.pdf
+[107] A new understanding of prediction markets via no-regret learning https://dash.harvard.edu/bitstream/1/8896228/1/new_understanding.pdf
+[108] Betting Exchanges vs Traditional Sportsbooks: Key Differences and ... https://www.northlondonpartners.org.uk/betting-exchanges-vs-traditional-sportsbooks/
+[109] The Difference Between Betting Exchanges vs Sportsbooks - Outlier https://outlier.bet/sports-betting-strategy/betting-intelligence/difference-between-betting-exchanges-versus-sportsbooks/
+[110] Key differences between a betting exchange and sportsbook https://sigma.world/news/key-differences-between-a-betting-exchange-and-sportsbook/
+[111] How Does Polymarket Makes Money: Business Model Explained https://ideausher.com/blog/how-polymarket-makes-money/
+[112] Betting exchange vs. Bookmaker: What's the difference https://help.smarkets.com/hc/en-gb/articles/115002445369-Betting-exchange-vs-Bookmaker-What-s-the-difference
+[113] Predictive Analytics Market to Reach $63.3 Billion, Globally, by 2032 ... https://finance.yahoo.com/news/predictive-analytics-market-reach-63-124300015.html
